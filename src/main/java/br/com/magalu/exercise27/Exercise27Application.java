@@ -24,6 +24,7 @@ public class Exercise27Application {
 
 		Calendar  dia = Calendar.getInstance();
 		data1.getDia( dia);
+		data1.getMesExtenso(dia);
 		data1.getMes(dia);
 		data1.getAno(dia);
 

@@ -38,13 +38,16 @@ public class Exercise2 {
         System.out.println ("Dia = " + (data.get(Calendar.DAY_OF_MONTH)));
     }
 
-    public void getMesExtenso( GregorianCalendar data){
-
+    public void getMesExtenso( Calendar data){
+        int mes = data.get(Calendar.MONTH);
+        String[]  mesExtenso = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"};
+        System.out.println ("Mês Extenso = " + mesExtenso[mes]);
     }
 
     public void getMes( Calendar data){
         System.out.println ("Mês = " + (data.get(Calendar.MONTH)+ 1));
     }
+
     public void getAno( Calendar data){
         System.out.println ("Ano = " + (data.get(Calendar.YEAR)));
     }
